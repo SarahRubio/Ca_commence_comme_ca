@@ -154,9 +154,9 @@
                 Image 2 du projet : <input name="imageprojet[]" type="file" accept="image/jpeg"  class="padbot3"/>
               </div>
 
-              <input type="submit" value="Envoyer" />
+              <input type="submit" value="Envoyer" class="padFull1 bgBeige font09 pointer fontDarkgrey" />
 
-              <a href="../administration.php" class="button">Annuler</a>
+              <a href="../administration.php" class="button padFull1 bgBeige font09 pointer fontDarkgrey">Annuler</a>
 
           </form>
 
