@@ -18,8 +18,8 @@
 
           <div class="padbot3">
             <?php
-                if(!empty($_SESSION["notif"])) {
-                    foreach ($_SESSION["notif"] as $key => $notif) {
+                if(!empty($_SESSION["notifUser"])) {
+                    foreach ($_SESSION["notifUser"] as $key => $notif) {
                         echo "<p class='tcenter bold'>$notif</p>";
                     }
                 }

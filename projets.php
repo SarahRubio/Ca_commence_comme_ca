@@ -23,14 +23,12 @@
                 <label for="filtre" class="maj">Filtrer les projets par technologies :</label>
                 <div class="formfield-select--container">
                   <select class="bgBeige" name="filtre">
-                    <option value="HTML5">HTML5</option>
-                    <option value="CSS3">CSS3</option>
-                    <option value="CSS3 Animation">CSS3 Animation</option>
-                    <option value="Javascript">Javascript</option>
-                    <option value="PHP">PHP</option>
-                    <option value="MySQL">MySQL</option>
-                    <option value="Python">Python</option>
-                    <option value="Django">Django</option>
+                    <?php
+                      $resultTech = $bdd -> query("SELECT * FROM technologie") -> fetchAll();
+                      foreach ($resultTech as $key => $tech) {
+                        echo "<option value=" . $tech["tech_nom"] . ">" . $tech["tech_nom"] . "</option>";
+                      }
+                     ?>
                   </select>
                 </div>
               </div>

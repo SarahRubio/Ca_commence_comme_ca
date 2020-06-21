@@ -17,7 +17,7 @@ if(!empty($_POST)) {
         $_SESSION["notif"][] = "Nous avons ajouté un nouvel administrateur";
 
       } else {
-        $_SESSION["notif"][] = "Les champs mot de passe sont différents";
+        $_SESSION["notifUser"][] = "Les champs mot de passe sont différents";
         header("location:" . URL_BASE . "admin/user_admin/formulaire_user.php");
         exit;
       }
