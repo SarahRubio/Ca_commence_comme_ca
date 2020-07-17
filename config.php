@@ -7,7 +7,7 @@ $nom_du_portfolio = "Mon petit portfolio";
 
 $_dossier_template = "templates/";
 
-define("URL_BASE", "http://localhost:8888/book_Sarah/");
+define("URL_BASE", "http://localhost:8888/Ca_commence_comme_ca/");
 
 # Connexion à la base de données Mysql
 $serveur = 'localhost';
